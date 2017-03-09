@@ -190,7 +190,8 @@ ul.todo {
   &#completed:empty:after {
     content: 'You have yet to complete any tasks.';
   }
-  &#todo:after, &#completed:after {
+  &#todo:after,
+  &#completed:after {
     width: 100%;
     display: block;
     text-align: center;

@@ -7,14 +7,11 @@ let data = (localStorage.getItem('todoList'))
     completed: []
   };
 
-console.dir(data);
-
 /**
  * Class Declaration for Todo List App
- * @param (User) Name of the Person who is logged in the application
  * @return { Void }
  */
-class TodoListApp {
+export default class TodoListApp {
 
   /**
    * Initialize todo app handler
@@ -22,7 +19,10 @@ class TodoListApp {
    * @return { Void }
    */
   init() {
+
     this.renderTodoList();
+
+    // Bind Events
     $('#add').on('click', () => {
       let value = $('#item').val();
       if (value) {
@@ -201,6 +201,3 @@ class TodoListApp {
   }
 
 }
-
-const app = new TodoListApp();
-app.init();

@@ -200,7 +200,7 @@ ul.todo {
   }
 }
 
-.auth-container {
+.auth-view {
   height: 100vh;
   position: absolute;
   top: 0;
@@ -208,6 +208,8 @@ ul.todo {
   background: #2D2530;
   width: 100%;
   z-index: 900;
+  background-image: url(http://cdn.onlinewebfonts.com/svg/img_78218.svg);
+  background-size: 32px;
   .auth-section {
     position: relative;
     top: 25%;
@@ -218,5 +220,26 @@ ul.todo {
     border: 1px solid;
     border-radius: 3px;
     padding: 20px 30px;
+    background: rgba( 56, 180, 74, 0.6);
+    @media(min-width: 760px) {
+      width: 50%;
+      padding: 20px 80px;
+    }
+    img {
+      height: 60px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      @media(min-width: 760px) {
+        padding: 15px 80px;
+        width: auto;
+      }
+    }
   }
 }

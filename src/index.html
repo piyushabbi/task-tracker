@@ -18,6 +18,7 @@
 			<h1>{ Your Task Tracker }</h1>
 			<div class="authenticate-choice">
 				<img src="http://simpleicon.com/wp-content/uploads/lock-4.svg" alt="authenticate logo" />
+				<p class="error-message"></p>
 				<div class="form-group">
 					<label for="email" class="sr-only">Username</label>
 					<input type="email" class="form-control" id="email" placeholder="Username" autocomplete="off" />
@@ -26,7 +27,8 @@
 					<label for="pwd" class="sr-only">Password</label>
 					<input type="password" class="form-control" id="pwd" placeholder="Password" autocomplete="off" />
 				</div>
-				<button class="btn btn-primary">Login</button>
+				<button class="btn btn-primary login-btn">Login</button>
+				<button class="btn btn-danger logout-btn">Sign out..</button>
 			</div>
 		</div>
 	</section>

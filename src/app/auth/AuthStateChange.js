@@ -1,6 +1,5 @@
 import firebase from 'firebase';
 import $ from 'jquery';
-import dialogPolyfill from 'dialog-polyfill';
 
 export function fireBaseStateChange() {
   firebase

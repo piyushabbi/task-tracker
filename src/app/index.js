@@ -6,10 +6,10 @@ import $ from 'jquery';
 import bootstrap from 'bootstrap';
 
 // Import app scripts
-import {fireBaseInitApp} from './auth/AuthInitialiseApp.js';
-import {fireBaseStateChange} from './auth/AuthStateChange.js';
-import {fireBaseLogIn} from './auth/AuthLoginMethod.js';
-import {firebaseLogOut} from './auth/AuthLogOutMethod.js';
+import { fireBaseInitApp } from './auth/AuthInitialiseApp.js';
+import { fireBaseStateChange } from './auth/AuthStateChange.js';
+import { fireBaseLogIn } from './auth/AuthLoginMethod.js';
+import { firebaseLogOut } from './auth/AuthLogOutMethod.js';
 
 import TodoListApp from '../../src/app/todo/todo.js';
 
@@ -23,6 +23,12 @@ let Auth = {
 }
 Auth.init();
 
+if( window.userfound ) {
+  
+} else {
+  
+}
+
 // Initialize the task app
-const app = new TodoListApp();
-app.init();
+const tasks = new TodoListApp();
+tasks.init();

@@ -7,10 +7,14 @@ export function fireBaseStateChange() {
     .onAuthStateChanged((user) => {
       if (user) {
         // User is signed in.
-        console.log('Authstatechange: User Signed in!')
+        console.log('Authstatechange: User Signed in!');
+        $('.auth-view').hide();
+        $('.todo-container').show();
       } else {
         // No user is signed in.
         console.log('Authstatechange: No User found!');
+        $('.todo-container').hide();
+        $('.auth-view').show();
       }
     });
 }
